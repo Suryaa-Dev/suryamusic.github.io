@@ -15,7 +15,7 @@ document.querySelector(".close").addEventListener("click",()=>{
 
 
 async function getSongs(){
-    let a = await fetch("https://github.com/Suryaa-Dev/suryamusic.github.io/tree/main/songs");
+    let a = await fetch("https://github.com/Suryaa-Dev/suryamusic.github.io/tree/main/songs?raw=true");
     let response = await a.text();
     // console.log(response);
     let myDiv = document.createElement("div");
