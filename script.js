@@ -15,7 +15,7 @@ document.querySelector(".close").addEventListener("click",()=>{
 
 
 async function getSongs(){
-    let a = await fetch("/songs/");
+    let a = await fetch("https://github.com/Suryaa-Dev/suryamusic.github.io/tree/main/songs");
     let response = await a.text();
     // console.log(response);
     let myDiv = document.createElement("div");
@@ -70,7 +70,7 @@ async function main(){
         let mySong2 = ourSongs[index];
         songCard2.innerHTML = songCard2.innerHTML + 
         `<div class="card white">
-        <img src="./imgs/${imgSrc[index]}" alt="">
+        <img src="https://github.com/Suryaa-Dev/suryamusic.github.io/tree/main/imgs/${imgSrc[index]}" alt="">
         <div class="songName">
             <h4>${mySong2.split("/songs/")[1].replaceAll("%20", " ").split(".mp3")[0]}</h4>
             <p>${singer[index]}</p>
